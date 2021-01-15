@@ -1,0 +1,28 @@
+GET http://localhost:8080/countamount
+Content-Type: application/json
+
+###
+
+GET http://localhost:8080/countnames
+Content-Type: application/json
+
+###
+GET http://localhost:8080/mostpopular
+Content-Type: application/json
+
+###
+GET http://localhost:8080/sortnames
+Content-Type: application/json
+
+###
+GET http://localhost:8080/allnames
+Content-Type: application/json
+
+###
+POST http://localhost:8080/addnames
+Content-Type: application/json
+
+{
+       
+}
+     
