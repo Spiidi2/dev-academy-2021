@@ -1,3 +1,9 @@
+GET http://localhost:8080/findName/Tiina
+Content-Type: application/json
+
+###
+
+
 GET http://localhost:8080/countamount
 Content-Type: application/json
 

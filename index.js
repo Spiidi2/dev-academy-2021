@@ -22,6 +22,7 @@ app.listen(port, () => {
   console.log("API at localhost:" + port);
 });
 
+// Returns all the names and the amounts
 app.get("/allnames", (req, res) => {
   Names.findAll()
      .then((allNames) => {
@@ -100,6 +101,19 @@ app.get("/countamount", (req, res) => {
      .then((sum) => {
       console.log(">>> Fetch all statuses successful.");
       res.json(sum);
+     })
+     .catch((error) => {
+      console.log(">>> Couldn't fetch statuses data.");
+        console.log("> Error: " + error);
+     });
+});
+
+app.get("/findName/:name", (req, res) => {
+  const findName = req.params.name;
+  Names.findOne({where: {name:findName}}) 
+    .then((names) => {
+      console.log(">>> Fetch all statuses successful.");
+      res.json(names);
      })
      .catch((error) => {
       console.log(">>> Couldn't fetch statuses data.");

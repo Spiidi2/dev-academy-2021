@@ -1,5 +1,27 @@
 # dev-academy-2021 exercise - Name Application
 
+Names application made with Node.JS Express and Sequelize. 
+
+
+Endpoints:
+
+***/allnames***
+> returns all names and amounts
+
+***/sortnames***
+> returns all names in alphabetical order
+
+***/mostpopular***
+> returns names most popular by amount
+
+***/countamount***
+> returns count of all names
+
+***/findName/:name***
+> returns the name and amount of given parameter
+
+# Assignment
+
 Your task is to implement a name application. The application should have an user interface. The user interface can be either a web application or an api. (It can even contain both if you have enough time and enthusiasm.) 
 
 The user interface should provide at least the first one of the following requirements, but again, you’re allowed to implement them all.
